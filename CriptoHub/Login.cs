@@ -32,5 +32,12 @@ namespace CriptoHub
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            Home j2 = new Home();
+            j2.Show();
+            this.Hide();
+        }
     }
 }

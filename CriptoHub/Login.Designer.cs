@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnMinimizar = new System.Windows.Forms.PictureBox();
+            this.BtnFechar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -38,12 +40,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEntrar = new System.Windows.Forms.Button();
-            this.BtnFechar = new System.Windows.Forms.PictureBox();
-            this.BtnMinimizar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnFechar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,6 +57,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 190);
             this.panel1.TabIndex = 0;
+            // 
+            // BtnMinimizar
+            // 
+            this.BtnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimizar.Image")));
+            this.BtnMinimizar.Location = new System.Drawing.Point(261, 5);
+            this.BtnMinimizar.Name = "BtnMinimizar";
+            this.BtnMinimizar.Size = new System.Drawing.Size(16, 10);
+            this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnMinimizar.TabIndex = 2;
+            this.BtnMinimizar.TabStop = false;
+            this.BtnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
+            // 
+            // BtnFechar
+            // 
+            this.BtnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnFechar.Image = ((System.Drawing.Image)(resources.GetObject("BtnFechar.Image")));
+            this.BtnFechar.Location = new System.Drawing.Point(283, 3);
+            this.BtnFechar.Name = "BtnFechar";
+            this.BtnFechar.Size = new System.Drawing.Size(14, 15);
+            this.BtnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnFechar.TabIndex = 1;
+            this.BtnFechar.TabStop = false;
+            this.BtnFechar.Click += new System.EventHandler(this.BtnFechar_Click);
             // 
             // pictureBox1
             // 
@@ -141,30 +165,7 @@
             this.btnEntrar.TabIndex = 7;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
-            // 
-            // BtnFechar
-            // 
-            this.BtnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnFechar.Image = ((System.Drawing.Image)(resources.GetObject("BtnFechar.Image")));
-            this.BtnFechar.Location = new System.Drawing.Point(283, 3);
-            this.BtnFechar.Name = "BtnFechar";
-            this.BtnFechar.Size = new System.Drawing.Size(14, 15);
-            this.BtnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnFechar.TabIndex = 1;
-            this.BtnFechar.TabStop = false;
-            this.BtnFechar.Click += new System.EventHandler(this.BtnFechar_Click);
-            // 
-            // BtnMinimizar
-            // 
-            this.BtnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimizar.Image")));
-            this.BtnMinimizar.Location = new System.Drawing.Point(261, 5);
-            this.BtnMinimizar.Name = "BtnMinimizar";
-            this.BtnMinimizar.Size = new System.Drawing.Size(16, 10);
-            this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnMinimizar.TabIndex = 2;
-            this.BtnMinimizar.TabStop = false;
-            this.BtnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // TelaLogin
             // 
@@ -185,9 +186,9 @@
             this.Text = "Login";
             this.Load += new System.EventHandler(this.TelaLogin_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnFechar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnFechar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
