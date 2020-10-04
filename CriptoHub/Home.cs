@@ -14,6 +14,8 @@ namespace CriptoHub
         public Home()
         {
             InitializeComponent();
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
@@ -26,6 +28,11 @@ namespace CriptoHub
             TelaLogin j1 = new TelaLogin();
             j1.Show();
             this.Hide();
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
