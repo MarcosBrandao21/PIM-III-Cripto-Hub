@@ -46,23 +46,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraSuperior = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btnHomeFechar = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.BarraSuperior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHomeFechar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.AllowDrop = true;
-            this.panelMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(45)))));
             this.panelMenu.Controls.Add(this.btSair);
             this.panelMenu.Controls.Add(this.btSuporte);
@@ -77,6 +68,7 @@
             this.panelMenu.Controls.Add(this.label1);
             this.panelMenu.Controls.Add(this.lbNome);
             this.panelMenu.Controls.Add(this.panelLogo);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 511);
@@ -143,6 +135,7 @@
             this.btImoveis.Text = "Imóveis";
             this.btImoveis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btImoveis.UseVisualStyleBackColor = true;
+            this.btImoveis.Click += new System.EventHandler(this.btImoveis_Click);
             // 
             // btLocatarios
             // 
@@ -158,6 +151,7 @@
             this.btLocatarios.Text = "Locatários";
             this.btLocatarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btLocatarios.UseVisualStyleBackColor = true;
+            this.btLocatarios.Click += new System.EventHandler(this.btLocatarios_Click);
             // 
             // btClientes
             // 
@@ -173,6 +167,7 @@
             this.btClientes.Text = "Clientes";
             this.btClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btClientes.UseVisualStyleBackColor = true;
+            this.btClientes.Click += new System.EventHandler(this.btClientes_Click);
             // 
             // label2
             // 
@@ -214,6 +209,7 @@
             this.btContratos.Text = "Contratos";
             this.btContratos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btContratos.UseVisualStyleBackColor = true;
+            this.btContratos.Click += new System.EventHandler(this.btContratos_Click);
             // 
             // label1
             // 
@@ -259,53 +255,21 @@
             // BarraSuperior
             // 
             this.BarraSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(45)))));
-            this.BarraSuperior.Controls.Add(this.pictureBox2);
-            this.BarraSuperior.Controls.Add(this.pictureBox3);
-            this.BarraSuperior.Controls.Add(this.btnHomeFechar);
             this.BarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarraSuperior.Location = new System.Drawing.Point(0, 0);
+            this.BarraSuperior.Location = new System.Drawing.Point(220, 0);
             this.BarraSuperior.Name = "BarraSuperior";
-            this.BarraSuperior.Size = new System.Drawing.Size(884, 20);
+            this.BarraSuperior.Size = new System.Drawing.Size(664, 20);
             this.BarraSuperior.TabIndex = 1;
             this.BarraSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraSuperior_MouseDown);
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.SystemColors.Control;
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelDesktop.Location = new System.Drawing.Point(215, 20);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(220, 20);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(669, 491);
+            this.panelDesktop.Size = new System.Drawing.Size(664, 491);
             this.panelDesktop.TabIndex = 2;
-            // 
-            // btnHomeFechar
-            // 
-            this.btnHomeFechar.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeFechar.Image")));
-            this.btnHomeFechar.Location = new System.Drawing.Point(865, 3);
-            this.btnHomeFechar.Name = "btnHomeFechar";
-            this.btnHomeFechar.Size = new System.Drawing.Size(19, 17);
-            this.btnHomeFechar.TabIndex = 0;
-            this.btnHomeFechar.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(820, 1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(19, 16);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(844, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(18, 18);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
             // 
             // Home
             // 
@@ -320,14 +284,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.Text = "Home";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Home_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.BarraSuperior.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnHomeFechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -351,8 +312,5 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel BarraSuperior;
         private System.Windows.Forms.Panel panelDesktop;
-        private System.Windows.Forms.PictureBox btnHomeFechar;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

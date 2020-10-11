@@ -44,6 +44,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Contratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Contratos.Designer.cs">
+      <DependentUpon>Contratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FeedBack.Designer.cs">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Imoveis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Imoveis.Designer.cs">
+      <DependentUpon>Imoveis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Locatarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Locatarios.Designer.cs">
+      <DependentUpon>Locatarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Suporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Suporte.Designer.cs">
+      <DependentUpon>Suporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +94,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Contratos.resx">
+      <DependentUpon>Contratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Locatarios.resx">
+      <DependentUpon>Locatarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CriptoHub.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,8 +69,25 @@ namespace CriptoHub
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        
+        private void btContratos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Contratos());
+        }
 
+        private void btClientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Clientes());
+        }
+
+        private void btLocatarios_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btImoveis_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
