@@ -254,7 +254,7 @@
             // 
             // BarraSuperior
             // 
-            this.BarraSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(45)))));
+            this.BarraSuperior.BackColor = System.Drawing.SystemColors.Control;
             this.BarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraSuperior.Location = new System.Drawing.Point(220, 0);
             this.BarraSuperior.Name = "BarraSuperior";
