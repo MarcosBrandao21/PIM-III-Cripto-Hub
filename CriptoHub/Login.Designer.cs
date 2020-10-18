@@ -35,8 +35,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNomeAdm = new System.Windows.Forms.TextBox();
+            this.txtSenhaAdm = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEntrar = new System.Windows.Forms.Button();
@@ -108,26 +108,26 @@
             this.panel3.Size = new System.Drawing.Size(215, 1);
             this.panel3.TabIndex = 2;
             // 
-            // textBox1
+            // txtNomeAdm
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(38, 317);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(215, 19);
-            this.textBox1.TabIndex = 3;
+            this.txtNomeAdm.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNomeAdm.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNomeAdm.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeAdm.Location = new System.Drawing.Point(36, 242);
+            this.txtNomeAdm.Name = "txtNomeAdm";
+            this.txtNomeAdm.Size = new System.Drawing.Size(215, 19);
+            this.txtNomeAdm.TabIndex = 3;
             // 
-            // textBox2
+            // txtSenhaAdm
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(38, 238);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 19);
-            this.textBox2.TabIndex = 4;
+            this.txtSenhaAdm.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSenhaAdm.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSenhaAdm.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenhaAdm.Location = new System.Drawing.Point(38, 322);
+            this.txtSenhaAdm.Name = "txtSenhaAdm";
+            this.txtSenhaAdm.PasswordChar = '*';
+            this.txtSenhaAdm.Size = new System.Drawing.Size(215, 19);
+            this.txtSenhaAdm.TabIndex = 4;
             // 
             // label1
             // 
@@ -175,8 +175,8 @@
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSenhaAdm);
+            this.Controls.Add(this.txtNomeAdm);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -199,8 +199,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNomeAdm;
+        private System.Windows.Forms.TextBox txtSenhaAdm;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnEntrar;
