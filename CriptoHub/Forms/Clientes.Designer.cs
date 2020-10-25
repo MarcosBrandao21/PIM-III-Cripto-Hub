@@ -47,7 +47,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 29);
+            this.label1.Location = new System.Drawing.Point(75, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 26);
             this.label1.TabIndex = 1;
@@ -56,10 +56,11 @@
             // btExportar
             // 
             this.btExportar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btExportar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btExportar.Image = ((System.Drawing.Image)(resources.GetObject("btExportar.Image")));
-            this.btExportar.Location = new System.Drawing.Point(152, 27);
+            this.btExportar.Location = new System.Drawing.Point(178, 40);
             this.btExportar.Name = "btExportar";
-            this.btExportar.Size = new System.Drawing.Size(98, 28);
+            this.btExportar.Size = new System.Drawing.Size(134, 36);
             this.btExportar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btExportar.TabIndex = 2;
             this.btExportar.TabStop = false;
@@ -70,9 +71,9 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(53, 73);
+            this.textBox1.Location = new System.Drawing.Point(79, 86);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 14);
+            this.textBox1.Size = new System.Drawing.Size(177, 14);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Busque por dados na lista...";
             // 
@@ -80,18 +81,19 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel2.Location = new System.Drawing.Point(53, 93);
+            this.panel2.Location = new System.Drawing.Point(79, 106);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(197, 1);
+            this.panel2.Size = new System.Drawing.Size(233, 1);
             this.panel2.TabIndex = 4;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(196, 64);
+            this.pictureBox1.Location = new System.Drawing.Point(222, 77);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(54, 23);
+            this.pictureBox1.Size = new System.Drawing.Size(90, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -99,10 +101,11 @@
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(518, 64);
+            this.pictureBox2.Location = new System.Drawing.Point(597, 77);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(54, 23);
+            this.pictureBox2.Size = new System.Drawing.Size(90, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -112,9 +115,9 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.Location = new System.Drawing.Point(423, 92);
+            this.panel1.Location = new System.Drawing.Point(502, 105);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(149, 1);
+            this.panel1.Size = new System.Drawing.Size(185, 1);
             this.panel1.TabIndex = 7;
             // 
             // textBox2
@@ -123,9 +126,9 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(423, 73);
+            this.textBox2.Location = new System.Drawing.Point(502, 86);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(141, 14);
+            this.textBox2.Size = new System.Drawing.Size(177, 14);
             this.textBox2.TabIndex = 6;
             this.textBox2.Text = "Busque por Id...";
             // 
@@ -133,7 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 491);
+            this.ClientSize = new System.Drawing.Size(789, 546);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox2);

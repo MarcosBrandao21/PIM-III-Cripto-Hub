@@ -15,5 +15,10 @@ namespace CriptoHub
         {
             InitializeComponent();
         }
+
+        private void Contratos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

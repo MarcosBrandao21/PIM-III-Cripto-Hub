@@ -71,7 +71,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 511);
+            this.panelMenu.Size = new System.Drawing.Size(220, 566);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -255,28 +255,27 @@
             // BarraSuperior
             // 
             this.BarraSuperior.BackColor = System.Drawing.SystemColors.Control;
-            this.BarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraSuperior.Location = new System.Drawing.Point(220, 0);
             this.BarraSuperior.Name = "BarraSuperior";
-            this.BarraSuperior.Size = new System.Drawing.Size(664, 20);
+            this.BarraSuperior.Size = new System.Drawing.Size(789, 20);
             this.BarraSuperior.TabIndex = 1;
             this.BarraSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraSuperior_MouseDown);
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.SystemColors.Control;
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 20);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(664, 491);
+            this.panelDesktop.Size = new System.Drawing.Size(789, 546);
             this.panelDesktop.TabIndex = 2;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint_1);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(884, 511);
+            this.ClientSize = new System.Drawing.Size(1009, 566);
             this.ControlBox = false;
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.BarraSuperior);
@@ -284,7 +283,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.Text = "Home";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Home_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
