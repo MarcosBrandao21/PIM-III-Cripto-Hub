@@ -16,7 +16,7 @@ namespace CriptoHub
     {
         //Referencia da conexão
 
-        SqlConnection Conexao = new SqlConnection(@"Data Source=LAPTOP-O50L6FC1\MSSQLSERVER02;Initial Catalog=CRIPTOHUB;Integrated Security=True");
+        //SqlConnection Conexao = new SqlConnection(@"Data Source=LAPTOP-O50L6FC1\MSSQLSERVER02;Initial Catalog=CRIPTOHUB;Integrated Security=True");
         public TelaLogin()
         {
             InitializeComponent();
@@ -41,11 +41,12 @@ namespace CriptoHub
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             // Preciso arrumar a conexao com DB
+            SqlConnection Conexao = new SqlConnection(@"Data Source=LAPTOP-O50L6FC1\MSSQLSERVER02;Initial Catalog=CRIPTOHUB;Integrated Security=True");
             Conexao.Open(); //Abrir a conexao
-            string query = "SELECT * FROM USERS_ADM WHERE NAME = '" + txtNomeAdm.Text + "' AND PASSWORD = '" + txtSenhaAdm.Text + '"';
+            string query = "SELECT * FROM USERS_ADM WHERE NAME = '" + txtNomeAdm.Text + "' AND PASSWORD = " + txtSenhaAdm.Text ;
             SqlDataAdapter dp = new SqlDataAdapter(query,Conexao);
             DataTable dt = new DataTable();
-            //dp.Fill(dt);
+            dp.Fill(dt);
 
             if(dt.Rows.Count == 1)
             {
