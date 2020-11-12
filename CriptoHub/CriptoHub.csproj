@@ -128,5 +128,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\db\db.csproj">
+      <Project>{36c8fc42-e746-4998-997c-36a21a3d94af}</Project>
+      <Name>db</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
