@@ -24,6 +24,11 @@ namespace CriptoHub
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
         }
+        public Home (string Nome)
+        {
+            InitializeComponent();
+            lbNome.Text = Nome; // variavel que irá receber o usuario logado
+        }
         private void AbrirFormulario(Form Formulario)
         {
             if (FormularioAtual != null)
@@ -103,6 +108,8 @@ namespace CriptoHub
         {
 
         }
+
+
     }
 }
 

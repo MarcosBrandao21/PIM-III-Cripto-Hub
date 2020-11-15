@@ -46,9 +46,10 @@ namespace CriptoHub
 
             if(b.Login(txtNomeAdm.Text, txtSenhaAdm.Text))
             {
-                Home j2 = new Home();
+                Home j2 = new Home(txtNomeAdm.Text);// receber usuario logado para o form Home
                 j2.Show();
                 this.Hide();
+                
             }
             else
             {
