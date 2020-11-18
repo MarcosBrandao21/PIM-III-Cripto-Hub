@@ -86,12 +86,12 @@ namespace CriptoHub
 
         private void btLocatarios_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario(new Locatarios());
         }
 
         private void btImoveis_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario(new Imoveis());
         }
 
         private void panelDesktop_Paint(object sender, PaintEventArgs e)
