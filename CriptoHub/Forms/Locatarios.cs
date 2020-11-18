@@ -15,6 +15,7 @@ namespace CriptoHub.Forms
         public Locatarios()
         {
             InitializeComponent();
+
         }
 
         private void Locatarios_Load(object sender, EventArgs e)
@@ -22,14 +23,11 @@ namespace CriptoHub.Forms
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
 
-        }
         // Arrumar Combo box
         private void comboboxclientes()
         {
+            //comboBox1.Text = "Selecione o Cliente";
             String scon = @"Data Source=LAPTOP-O50L6FC1\MSSQLSERVER02;Initial Catalog=CRIPTOHUB;Integrated Security=True";
             SqlConnection  con = new SqlConnection(scon);
             try
@@ -51,6 +49,11 @@ namespace CriptoHub.Forms
             comboBox1.DisplayMember = "USERS";
             comboBox1.SelectedItem = "";
             comboBox1.Refresh(); //faz uma nova busca no BD para preencher os valores da cb de departamentos.
+        }
+
+        private void comboBox1_Click(object sender, EventArgs e)
+        {
+            comboboxclientes();
         }
     }
 }
