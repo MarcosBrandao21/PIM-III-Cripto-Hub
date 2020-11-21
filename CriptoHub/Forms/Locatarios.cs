@@ -26,7 +26,7 @@ namespace CriptoHub.Forms
             SqlDataAdapter da = new SqlDataAdapter(Query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            dgClientes.DataSource = dt*/
+            dgLocatarios.DataSource = dt;*/
         }
 
 

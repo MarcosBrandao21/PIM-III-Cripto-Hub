@@ -49,7 +49,6 @@ namespace CriptoHub
                 Home j2 = new Home(txtNomeAdm.Text);// receber usuario logado para o form Home
                 j2.Show();
                 this.Hide();
-                
             }
             else
             {

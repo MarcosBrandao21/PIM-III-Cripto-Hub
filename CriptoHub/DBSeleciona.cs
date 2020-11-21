@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CriptoHub
 {
-    class DBSeleciona
+    public class DBSeleciona
     {
         public DataTable ExecutarSelecaoNoBanco (string QuerySQL)
         {
