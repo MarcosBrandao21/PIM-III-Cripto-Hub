@@ -397,7 +397,7 @@
         adoPKz71k9Z/+S//5b/8l//yX/7Lf/kv/3VtV0DA/wFw69/8WrMusQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbBuscarNomeClientes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOsAAABVCAYAAACoyhPQAAAABGdBTUEAALGPC/xhBQAAVP5JREFUeF7t
         fQd0XFe1tiTbkmXZcu924jg9TsEpkJBCQgoJCbyEIEiAvFDy5z0CgTf8kAU8Hj/lAYsiyHPiIqtOU7kq
@@ -765,7 +765,7 @@
         Ju1DWCOyQAdATOjPA0EYP5TSr6NttI220eanBQT8f5UiUuDW/7bFAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbBuscarIdClientes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOsAAABVCAYAAACoyhPQAAAABGdBTUEAALGPC/xhBQAAVP5JREFUeF7t
         fQd0XFe1tiTbkmXZcu924jg9TsEpkJBCQgoJCbyEIEiAvFDy5z0CgTf8kAU8Hj/lAYsiyHPiIqtOU7kq

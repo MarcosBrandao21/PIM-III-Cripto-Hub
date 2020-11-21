@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBBase.cs" />
+    <Compile Include="DBSeleciona.cs" />
     <Compile Include="Forms\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>

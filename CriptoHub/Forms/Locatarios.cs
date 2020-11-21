@@ -20,7 +20,13 @@ namespace CriptoHub.Forms
 
         private void Locatarios_Load(object sender, EventArgs e)
         {
-
+            /*string strConxao = @"Data Source=LAPTOP-O50L6FC1\MSSQLSERVER02;Initial Catalog=CRIPTOHUB;Integrated Security=True";
+            string Query = "SELECT ID, NAME, EMAIL, CPF FROM USERS ORDER BY ID ASC";
+            SqlConnection con = new SqlConnection(strConxao);
+            SqlDataAdapter da = new SqlDataAdapter(Query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dgClientes.DataSource = dt*/
         }
 
 
@@ -54,6 +60,11 @@ namespace CriptoHub.Forms
         private void comboBox1_Click(object sender, EventArgs e)
         {
             comboboxclientes();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
