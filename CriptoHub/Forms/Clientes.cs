@@ -63,5 +63,13 @@ namespace CriptoHub.Forms
         {
             tbIdClientes.Text = "";
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            EditarClientes EC = new EditarClientes();
+            EC.Show();
+            this.Hide();
+            
+        }
     }
 }

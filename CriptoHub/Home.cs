@@ -43,7 +43,7 @@ namespace CriptoHub
             panelDesktop.Tag = Formulario;
             Formulario.BringToFront();
             Formulario.Show();
-
+            
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)

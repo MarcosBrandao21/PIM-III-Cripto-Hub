@@ -58,6 +58,12 @@
     <Compile Include="Forms\Contratos.Designer.cs">
       <DependentUpon>Contratos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EditarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditarClientes.Designer.cs">
+      <DependentUpon>EditarClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FeedBack.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Contratos.resx">
       <DependentUpon>Contratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditarClientes.resx">
+      <DependentUpon>EditarClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Locatarios.resx">
       <DependentUpon>Locatarios.cs</DependentUpon>

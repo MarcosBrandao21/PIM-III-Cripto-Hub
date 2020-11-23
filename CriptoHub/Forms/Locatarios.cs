@@ -66,5 +66,10 @@ namespace CriptoHub.Forms
         {
 
         }
+
+        private void dgLocatarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
