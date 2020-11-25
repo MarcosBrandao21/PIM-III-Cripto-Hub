@@ -69,7 +69,15 @@ namespace CriptoHub.Forms
             EditarClientes EC = new EditarClientes();
             EC.Show();
             this.Hide();
-            
+
+            //int linha = dgClientes.CurrentRow.Index;
+        }
+
+        private void pbAdicionar_Click(object sender, EventArgs e)
+        {
+            AdicionarCliente AD = new AdicionarCliente();
+            AD.Show();
+            this.Hide();
         }
     }
 }

@@ -32,35 +32,38 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtNomeAdm = new System.Windows.Forms.TextBox();
+            this.tbNome = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbRG = new System.Windows.Forms.TextBox();
+            this.tbCPF = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbSexo = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbNomeEmpresa = new System.Windows.Forms.TextBox();
+            this.tbSenha = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tbID = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.mtbNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.pbRetornar = new System.Windows.Forms.PictureBox();
+            this.pbSalvar = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tbIDCliente = new System.Windows.Forms.TextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRetornar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalvar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -96,16 +99,16 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Nome";
             // 
-            // txtNomeAdm
+            // tbNome
             // 
-            this.txtNomeAdm.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNomeAdm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNomeAdm.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeAdm.Location = new System.Drawing.Point(89, 137);
-            this.txtNomeAdm.MaxLength = 255;
-            this.txtNomeAdm.Name = "txtNomeAdm";
-            this.txtNomeAdm.Size = new System.Drawing.Size(215, 19);
-            this.txtNomeAdm.TabIndex = 13;
+            this.tbNome.BackColor = System.Drawing.SystemColors.Control;
+            this.tbNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNome.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNome.Location = new System.Drawing.Point(89, 137);
+            this.tbNome.MaxLength = 255;
+            this.tbNome.Name = "tbNome";
+            this.tbNome.Size = new System.Drawing.Size(215, 19);
+            this.tbNome.TabIndex = 13;
             // 
             // panel3
             // 
@@ -145,27 +148,27 @@
             this.label5.TabIndex = 21;
             this.label5.Text = "CPF";
             // 
-            // textBox1
+            // tbRG
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(91, 369);
-            this.textBox1.MaxLength = 9;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 19);
-            this.textBox1.TabIndex = 20;
+            this.tbRG.BackColor = System.Drawing.SystemColors.Control;
+            this.tbRG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbRG.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRG.Location = new System.Drawing.Point(91, 369);
+            this.tbRG.MaxLength = 9;
+            this.tbRG.Name = "tbRG";
+            this.tbRG.Size = new System.Drawing.Size(215, 19);
+            this.tbRG.TabIndex = 20;
             // 
-            // textBox2
+            // tbCPF
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(89, 289);
-            this.textBox2.MaxLength = 11;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 19);
-            this.textBox2.TabIndex = 19;
+            this.tbCPF.BackColor = System.Drawing.SystemColors.Control;
+            this.tbCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbCPF.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCPF.Location = new System.Drawing.Point(89, 289);
+            this.tbCPF.MaxLength = 11;
+            this.tbCPF.Name = "tbCPF";
+            this.tbCPF.Size = new System.Drawing.Size(215, 19);
+            this.tbCPF.TabIndex = 19;
             // 
             // panel1
             // 
@@ -205,27 +208,27 @@
             this.label7.TabIndex = 27;
             this.label7.Text = "Sexo";
             // 
-            // textBox3
+            // tbEmail
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(466, 220);
-            this.textBox3.MaxLength = 255;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(215, 19);
-            this.textBox3.TabIndex = 26;
+            this.tbEmail.BackColor = System.Drawing.SystemColors.Control;
+            this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEmail.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmail.Location = new System.Drawing.Point(466, 220);
+            this.tbEmail.MaxLength = 255;
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(215, 19);
+            this.tbEmail.TabIndex = 26;
             // 
-            // textBox4
+            // tbSexo
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(464, 140);
-            this.textBox4.MaxLength = 1;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(215, 19);
-            this.textBox4.TabIndex = 25;
+            this.tbSexo.BackColor = System.Drawing.SystemColors.Control;
+            this.tbSexo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbSexo.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSexo.Location = new System.Drawing.Point(464, 140);
+            this.tbSexo.MaxLength = 1;
+            this.tbSexo.Name = "tbSexo";
+            this.tbSexo.Size = new System.Drawing.Size(215, 19);
+            this.tbSexo.TabIndex = 25;
             // 
             // panel5
             // 
@@ -265,28 +268,28 @@
             this.label9.TabIndex = 33;
             this.label9.Text = "Senha";
             // 
-            // textBox5
+            // tbNomeEmpresa
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(466, 369);
-            this.textBox5.MaxLength = 100;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(215, 19);
-            this.textBox5.TabIndex = 32;
+            this.tbNomeEmpresa.BackColor = System.Drawing.SystemColors.Control;
+            this.tbNomeEmpresa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNomeEmpresa.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNomeEmpresa.Location = new System.Drawing.Point(466, 369);
+            this.tbNomeEmpresa.MaxLength = 100;
+            this.tbNomeEmpresa.Name = "tbNomeEmpresa";
+            this.tbNomeEmpresa.Size = new System.Drawing.Size(215, 19);
+            this.tbNomeEmpresa.TabIndex = 32;
             // 
-            // textBox6
+            // tbSenha
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(464, 289);
-            this.textBox6.MaxLength = 20;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.PasswordChar = '*';
-            this.textBox6.Size = new System.Drawing.Size(215, 19);
-            this.textBox6.TabIndex = 31;
+            this.tbSenha.BackColor = System.Drawing.SystemColors.Control;
+            this.tbSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbSenha.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSenha.Location = new System.Drawing.Point(464, 289);
+            this.tbSenha.MaxLength = 6;
+            this.tbSenha.Name = "tbSenha";
+            this.tbSenha.PasswordChar = '*';
+            this.tbSenha.Size = new System.Drawing.Size(215, 19);
+            this.tbSenha.TabIndex = 31;
             // 
             // panel7
             // 
@@ -315,16 +318,16 @@
             this.label10.TabIndex = 37;
             this.label10.Text = "ID Registro Status";
             // 
-            // textBox7
+            // tbID
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(91, 452);
-            this.textBox7.MaxLength = 1;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(215, 19);
-            this.textBox7.TabIndex = 36;
+            this.tbID.BackColor = System.Drawing.SystemColors.Control;
+            this.tbID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbID.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbID.Location = new System.Drawing.Point(91, 452);
+            this.tbID.MaxLength = 1;
+            this.tbID.Name = "tbID";
+            this.tbID.Size = new System.Drawing.Size(215, 19);
+            this.tbID.TabIndex = 36;
             // 
             // panel9
             // 
@@ -334,82 +337,116 @@
             this.panel9.Size = new System.Drawing.Size(215, 1);
             this.panel9.TabIndex = 35;
             // 
-            // maskedTextBox1
+            // mtbNascimento
             // 
-            this.maskedTextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox1.Location = new System.Drawing.Point(92, 223);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(212, 13);
-            this.maskedTextBox1.TabIndex = 38;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.mtbNascimento.BackColor = System.Drawing.SystemColors.Control;
+            this.mtbNascimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mtbNascimento.Location = new System.Drawing.Point(92, 223);
+            this.mtbNascimento.Mask = "00/00/0000";
+            this.mtbNascimento.Name = "mtbNascimento";
+            this.mtbNascimento.Size = new System.Drawing.Size(212, 13);
+            this.mtbNascimento.TabIndex = 38;
+            this.mtbNascimento.ValidatingType = typeof(System.DateTime);
             // 
-            // pictureBox1
+            // pbRetornar
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(464, 443);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(90, 31);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pbRetornar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbRetornar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbRetornar.Image = ((System.Drawing.Image)(resources.GetObject("pbRetornar.Image")));
+            this.pbRetornar.Location = new System.Drawing.Point(464, 443);
+            this.pbRetornar.Name = "pbRetornar";
+            this.pbRetornar.Size = new System.Drawing.Size(90, 31);
+            this.pbRetornar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRetornar.TabIndex = 39;
+            this.pbRetornar.TabStop = false;
+            this.pbRetornar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // pbSalvar
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(591, 443);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(90, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 40;
-            this.pictureBox2.TabStop = false;
+            this.pbSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbSalvar.Image = ((System.Drawing.Image)(resources.GetObject("pbSalvar.Image")));
+            this.pbSalvar.Location = new System.Drawing.Point(591, 443);
+            this.pbSalvar.Name = "pbSalvar";
+            this.pbSalvar.Size = new System.Drawing.Size(90, 31);
+            this.pbSalvar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbSalvar.TabIndex = 40;
+            this.pbSalvar.TabStop = false;
+            this.pbSalvar.Click += new System.EventHandler(this.pbSalvar_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label11.Location = new System.Drawing.Point(463, 35);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(198, 15);
+            this.label11.TabIndex = 43;
+            this.label11.Text = "ID do Cliente que irá ser alterado *";
+            // 
+            // tbIDCliente
+            // 
+            this.tbIDCliente.BackColor = System.Drawing.SystemColors.Control;
+            this.tbIDCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbIDCliente.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbIDCliente.Location = new System.Drawing.Point(464, 57);
+            this.tbIDCliente.MaxLength = 255;
+            this.tbIDCliente.Name = "tbIDCliente";
+            this.tbIDCliente.Size = new System.Drawing.Size(215, 19);
+            this.tbIDCliente.TabIndex = 42;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel10.Location = new System.Drawing.Point(466, 78);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(215, 1);
+            this.panel10.TabIndex = 41;
             // 
             // EditarClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 546);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.tbIDCliente);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.pbSalvar);
+            this.Controls.Add(this.pbRetornar);
+            this.Controls.Add(this.mtbNascimento);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.tbID);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.tbNomeEmpresa);
+            this.Controls.Add(this.tbSenha);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbSexo);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbRG);
+            this.Controls.Add(this.tbCPF);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtNomeAdm);
+            this.Controls.Add(this.tbNome);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditarClientes";
             this.Text = "EditarClientes";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRetornar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalvar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,32 +457,35 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNomeAdm;
+        private System.Windows.Forms.TextBox tbNome;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbRG;
+        private System.Windows.Forms.TextBox tbCPF;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbSexo;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbNomeEmpresa;
+        private System.Windows.Forms.TextBox tbSenha;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.MaskedTextBox mtbNascimento;
+        private System.Windows.Forms.PictureBox pbRetornar;
+        private System.Windows.Forms.PictureBox pbSalvar;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox tbIDCliente;
+        private System.Windows.Forms.Panel panel10;
     }
 }
