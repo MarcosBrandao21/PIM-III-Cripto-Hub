@@ -79,5 +79,12 @@ namespace CriptoHub.Forms
             AD.Show();
             this.Hide();
         }
+
+        private void pbRemover_Click(object sender, EventArgs e)
+        {
+            ApagarClientes apagarClientes = new ApagarClientes();
+            apagarClientes.Show();
+            this.Hide();
+        }
     }
 }

@@ -52,6 +52,12 @@
     <Compile Include="Forms\AdicionarCliente.Designer.cs">
       <DependentUpon>AdicionarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ApagarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApagarClientes.Designer.cs">
+      <DependentUpon>ApagarClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AdicionarCliente.resx">
       <DependentUpon>AdicionarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApagarClientes.resx">
+      <DependentUpon>ApagarClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>

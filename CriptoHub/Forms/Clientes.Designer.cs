@@ -40,14 +40,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbIdClientes = new System.Windows.Forms.TextBox();
             this.dgClientes = new System.Windows.Forms.DataGridView();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pbRemover = new System.Windows.Forms.PictureBox();
             this.pbAdicionar = new System.Windows.Forms.PictureBox();
             this.pbEditar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btExportar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscarNomeClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscarIdClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgClientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRemover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdicionar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEditar)).BeginInit();
             this.SuspendLayout();
@@ -178,17 +178,18 @@
             this.dgClientes.Size = new System.Drawing.Size(597, 383);
             this.dgClientes.TabIndex = 9;
             // 
-            // pictureBox5
+            // pbRemover
             // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(672, 487);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(90, 31);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 24;
-            this.pictureBox5.TabStop = false;
+            this.pbRemover.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbRemover.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbRemover.Image = ((System.Drawing.Image)(resources.GetObject("pbRemover.Image")));
+            this.pbRemover.Location = new System.Drawing.Point(672, 487);
+            this.pbRemover.Name = "pbRemover";
+            this.pbRemover.Size = new System.Drawing.Size(90, 31);
+            this.pbRemover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRemover.TabIndex = 24;
+            this.pbRemover.TabStop = false;
+            this.pbRemover.Click += new System.EventHandler(this.pbRemover_Click);
             // 
             // pbAdicionar
             // 
@@ -221,7 +222,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 546);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pbRemover);
             this.Controls.Add(this.pbAdicionar);
             this.Controls.Add(this.pbEditar);
             this.Controls.Add(this.dgClientes);
@@ -241,7 +242,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscarNomeClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscarIdClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgClientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRemover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdicionar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEditar)).EndInit();
             this.ResumeLayout(false);
@@ -260,7 +261,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox tbIdClientes;
         private System.Windows.Forms.DataGridView dgClientes;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pbRemover;
         private System.Windows.Forms.PictureBox pbAdicionar;
         private System.Windows.Forms.PictureBox pbEditar;
     }
