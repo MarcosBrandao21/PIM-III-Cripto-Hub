@@ -94,22 +94,21 @@ namespace CriptoHub
             AbrirFormulario(new Imoveis());
         }
 
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        private void HoraData_Tick(object sender, EventArgs e)
         {
-
+            lbHora.Text = DateTime.Now.ToShortTimeString();
+            lbData.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void panelDesktop_Paint_1(object sender, PaintEventArgs e)
+        private void btFeedback_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario(new FeedBack());
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void btSuporte_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Software já está atualizado!", "Suporte", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-
     }
 }
 

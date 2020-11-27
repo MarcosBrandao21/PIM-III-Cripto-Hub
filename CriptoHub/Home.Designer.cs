@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btSair = new System.Windows.Forms.Button();
@@ -46,7 +47,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraSuperior = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.lbData = new System.Windows.Forms.Label();
+            this.lbHora = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.HoraData = new System.Windows.Forms.Timer(this.components);
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -108,6 +112,7 @@
             this.btSuporte.Text = "Suporte";
             this.btSuporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btSuporte.UseVisualStyleBackColor = true;
+            this.btSuporte.Click += new System.EventHandler(this.btSuporte_Click);
             // 
             // btFeedback
             // 
@@ -123,6 +128,7 @@
             this.btFeedback.Text = "Fornecer FeedBack";
             this.btFeedback.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btFeedback.UseVisualStyleBackColor = true;
+            this.btFeedback.Click += new System.EventHandler(this.btFeedback_Click);
             // 
             // btImoveis
             // 
@@ -267,22 +273,50 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(45)))));
+            this.panelDesktop.Controls.Add(this.lbData);
+            this.panelDesktop.Controls.Add(this.lbHora);
             this.panelDesktop.Controls.Add(this.pictureBox2);
             this.panelDesktop.Location = new System.Drawing.Point(220, 20);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(789, 546);
             this.panelDesktop.TabIndex = 2;
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint_1);
+            // 
+            // lbData
+            // 
+            this.lbData.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbData.ForeColor = System.Drawing.Color.Aqua;
+            this.lbData.Location = new System.Drawing.Point(222, 359);
+            this.lbData.Name = "lbData";
+            this.lbData.Size = new System.Drawing.Size(373, 46);
+            this.lbData.TabIndex = 3;
+            this.lbData.Text = "Data";
+            this.lbData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbHora
+            // 
+            this.lbHora.Font = new System.Drawing.Font("Calibri", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHora.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbHora.Location = new System.Drawing.Point(279, 284);
+            this.lbHora.Name = "lbHora";
+            this.lbHora.Size = new System.Drawing.Size(260, 78);
+            this.lbHora.TabIndex = 2;
+            this.lbHora.Text = "Hora";
+            this.lbHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(296, 194);
+            this.pictureBox2.Location = new System.Drawing.Point(322, 156);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(196, 158);
+            this.pictureBox2.Size = new System.Drawing.Size(152, 125);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            // 
+            // HoraData
+            // 
+            this.HoraData.Enabled = true;
+            this.HoraData.Tick += new System.EventHandler(this.HoraData_Tick);
             // 
             // Home
             // 
@@ -327,5 +361,8 @@
         private System.Windows.Forms.Panel BarraSuperior;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lbData;
+        private System.Windows.Forms.Label lbHora;
+        private System.Windows.Forms.Timer HoraData;
     }
 }

@@ -37,12 +37,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pbListagemDados = new System.Windows.Forms.PictureBox();
+            this.pbDesenvolvimento = new System.Windows.Forms.PictureBox();
+            this.pbValidacao = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)(this.pbListagemDados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDesenvolvimento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbValidacao)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -126,38 +127,45 @@
             this.label6.Text = "Solicitações de contratos.\r\nVerificação de dados necessarios.\r\nAprovação para o d" +
     "esenvolvimento.";
             // 
-            // pictureBox1
+            // pbListagemDados
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(572, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.pbListagemDados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbListagemDados.Image = ((System.Drawing.Image)(resources.GetObject("pbListagemDados.Image")));
+            this.pbListagemDados.Location = new System.Drawing.Point(572, 40);
+            this.pbListagemDados.Name = "pbListagemDados";
+            this.pbListagemDados.Size = new System.Drawing.Size(153, 77);
+            this.pbListagemDados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbListagemDados.TabIndex = 11;
+            this.pbListagemDados.TabStop = false;
+            this.pbListagemDados.Click += new System.EventHandler(this.pbListagemDados_Click);
             // 
-            // pictureBox2
+            // pbDesenvolvimento
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(572, 228);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(153, 77);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
+            this.pbDesenvolvimento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbDesenvolvimento.Image = ((System.Drawing.Image)(resources.GetObject("pbDesenvolvimento.Image")));
+            this.pbDesenvolvimento.Location = new System.Drawing.Point(572, 228);
+            this.pbDesenvolvimento.Name = "pbDesenvolvimento";
+            this.pbDesenvolvimento.Size = new System.Drawing.Size(153, 77);
+            this.pbDesenvolvimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDesenvolvimento.TabIndex = 12;
+            this.pbDesenvolvimento.TabStop = false;
+            this.pbDesenvolvimento.Click += new System.EventHandler(this.pbDesenvolvimento_Click);
             // 
-            // pictureBox3
+            // pbValidacao
             // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(572, 418);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(153, 77);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
+            this.pbValidacao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbValidacao.Image = ((System.Drawing.Image)(resources.GetObject("pbValidacao.Image")));
+            this.pbValidacao.Location = new System.Drawing.Point(572, 418);
+            this.pbValidacao.Name = "pbValidacao";
+            this.pbValidacao.Size = new System.Drawing.Size(153, 77);
+            this.pbValidacao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbValidacao.TabIndex = 13;
+            this.pbValidacao.TabStop = false;
+            this.pbValidacao.Click += new System.EventHandler(this.pbValidacao_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Contratos
             // 
@@ -166,9 +174,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(789, 546);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbValidacao);
+            this.Controls.Add(this.pbDesenvolvimento);
+            this.Controls.Add(this.pbListagemDados);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -181,9 +189,9 @@
             this.Name = "Contratos";
             this.Text = "Contratos";
             this.Load += new System.EventHandler(this.Contratos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbListagemDados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDesenvolvimento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbValidacao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,8 +207,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbListagemDados;
+        private System.Windows.Forms.PictureBox pbDesenvolvimento;
+        private System.Windows.Forms.PictureBox pbValidacao;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

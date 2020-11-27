@@ -20,5 +20,20 @@ namespace CriptoHub
         {
 
         }
+
+        private void pbListagemDados_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+        }
+
+        private void pbDesenvolvimento_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+        }
+
+        private void pbValidacao_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+        }
     }
 }
