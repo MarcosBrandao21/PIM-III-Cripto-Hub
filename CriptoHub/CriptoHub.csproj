@@ -52,11 +52,35 @@
     <Compile Include="Forms\AdicionarCliente.Designer.cs">
       <DependentUpon>AdicionarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdicionarImovel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdicionarImovel.Designer.cs">
+      <DependentUpon>AdicionarImovel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdicionarLocatarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdicionarLocatarios.Designer.cs">
+      <DependentUpon>AdicionarLocatarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ApagarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ApagarClientes.Designer.cs">
       <DependentUpon>ApagarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ApagarImovel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApagarImovel.Designer.cs">
+      <DependentUpon>ApagarImovel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ApagarLocatarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApagarLocatarios.Designer.cs">
+      <DependentUpon>ApagarLocatarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Clientes.cs">
       <SubType>Form</SubType>
@@ -75,6 +99,18 @@
     </Compile>
     <Compile Include="Forms\EditarClientes.Designer.cs">
       <DependentUpon>EditarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditarImovel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditarImovel.Designer.cs">
+      <DependentUpon>EditarImovel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditarLocatario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditarLocatario.Designer.cs">
+      <DependentUpon>EditarLocatario.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FeedBack.cs">
       <SubType>Form</SubType>
@@ -117,8 +153,20 @@
     <EmbeddedResource Include="Forms\AdicionarCliente.resx">
       <DependentUpon>AdicionarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdicionarImovel.resx">
+      <DependentUpon>AdicionarImovel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdicionarLocatarios.resx">
+      <DependentUpon>AdicionarLocatarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ApagarClientes.resx">
       <DependentUpon>ApagarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApagarImovel.resx">
+      <DependentUpon>ApagarImovel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApagarLocatarios.resx">
+      <DependentUpon>ApagarLocatarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
@@ -128,6 +176,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditarClientes.resx">
       <DependentUpon>EditarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditarImovel.resx">
+      <DependentUpon>EditarImovel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditarLocatario.resx">
+      <DependentUpon>EditarLocatario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FeedBack.resx">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Imoveis.resx">
+      <DependentUpon>Imoveis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Locatarios.resx">
       <DependentUpon>Locatarios.cs</DependentUpon>
