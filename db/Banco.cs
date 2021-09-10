@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
+using DllConfiguracao;
 
 namespace db
 {
@@ -14,17 +15,19 @@ namespace db
         {
             bool ret = false;
 
+            //utiliza a DLL de configuração do appconfig, que armazena a string de conexão
+            Configuracao configuracao = new Configuracao();
 
-            //SqlConnection con = null; 
-            SqlConnection Conexao = new SqlConnection(@"Data Source=LAPTOP-O50L6FC1\MSSQLSERVER02;Initial Catalog=CRIPTOHUB;Integrated Security=True");
-            Conexao.Open(); //Abrir a conexao
+            string strConexao = configuracao.StrConfiguracao;
             string query = "SELECT * FROM USERS_ADM WHERE NAME = '" + Login + "' AND PASSWORD = " + senha;
-            SqlDataAdapter dp = new SqlDataAdapter(query, Conexao);
+
+            SqlDataAdapter dp = new SqlDataAdapter(query, strConexao);
             DataTable dt = new DataTable();
             dp.Fill(dt);
 
+
             if (dt.Rows.Count == 1) ret = true;
-            Conexao.Close();
+            //Conexao.Close();
             return ret;
         }
     }

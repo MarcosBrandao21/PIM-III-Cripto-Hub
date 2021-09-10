@@ -207,6 +207,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -221,6 +222,10 @@
     <ProjectReference Include="..\db\db.csproj">
       <Project>{36c8fc42-e746-4998-997c-36a21a3d94af}</Project>
       <Name>db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DllConfiguracao\DllConfiguracao.csproj">
+      <Project>{474e3ebe-411c-40f6-abec-2eb510cda52f}</Project>
+      <Name>DllConfiguracao</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

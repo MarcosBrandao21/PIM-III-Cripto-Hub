@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoHub", "CriptoHub.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "db", "..\db\db.csproj", "{36C8FC42-E746-4998-997C-36A21A3D94AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllConfiguracao", "..\DllConfiguracao\DllConfiguracao.csproj", "{474E3EBE-411C-40F6-ABEC-2EB510CDA52F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{36C8FC42-E746-4998-997C-36A21A3D94AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36C8FC42-E746-4998-997C-36A21A3D94AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36C8FC42-E746-4998-997C-36A21A3D94AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{474E3EBE-411C-40F6-ABEC-2EB510CDA52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{474E3EBE-411C-40F6-ABEC-2EB510CDA52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{474E3EBE-411C-40F6-ABEC-2EB510CDA52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{474E3EBE-411C-40F6-ABEC-2EB510CDA52F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -42,13 +42,8 @@ namespace CriptoHub
             panelDesktop.Controls.Add(Formulario);
             panelDesktop.Tag = Formulario;
             Formulario.BringToFront();
-            Formulario.Show();
+            Formulario.Show(); 
             
-        }
-
-        private void panelMenu_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btSair_Click(object sender, EventArgs e)
@@ -56,11 +51,6 @@ namespace CriptoHub
             TelaLogin j1 = new TelaLogin();
             j1.Show();
             this.Hide();
-        }
-
-        private void Home_Load(object sender, EventArgs e)
-        {
-
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

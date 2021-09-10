@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using DllConfiguracao;
 
 namespace CriptoHub
 {
@@ -10,7 +11,10 @@ namespace CriptoHub
     {
         public void ExecutarInstrucaoNaBase (string QuerySQL)
         {
-            string strConxao = @"Data Source=LAPTOP-O50L6FC1\MSSQLSERVER02;Initial Catalog=CRIPTOHUB;Integrated Security=True";
+
+            Configuracao configuracao = new Configuracao();
+
+            string strConxao = configuracao.StrConfiguracao;
             string Query = QuerySQL;
 
             SqlConnection con = new SqlConnection(strConxao);

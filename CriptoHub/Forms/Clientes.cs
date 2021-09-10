@@ -19,9 +19,13 @@ namespace CriptoHub.Forms
 
         private void Clientes_Load(object sender, EventArgs e)
         {
-            /*DBSeleciona db = new DBSeleciona();
+            /*DBSeleciona dBSeleciona = new DBSeleciona();
+
             string Query = "SELECT ID, NAME, EMAIL, CPF FROM USERS ORDER BY ID ASC";
-            db.ExecutarSelecaoNoBanco(Query);*/
+
+            dBSeleciona.ExecutarSelecaoNoBanco(Query);
+            dgClientes.DataSource = 
+             */
 
             string strConxao = @"Data Source=LAPTOP-O50L6FC1\MSSQLSERVER02;Initial Catalog=CRIPTOHUB;Integrated Security=True";
             string Query = "SELECT ID, NAME, EMAIL, CPF FROM USERS ORDER BY ID ASC";

@@ -17,16 +17,11 @@ namespace CriptoHub
     {
         //Referencia da conexão
 
-        //SqlConnection Conexao = new SqlConnection(@"Data Source=LAPTOP-O50L6FC1\MSSQLSERVER02;Initial Catalog=CRIPTOHUB;Integrated Security=True");
+        
         public TelaLogin()
         {
             InitializeComponent();
             txtNomeAdm.Select();
-        }
-
-        private void TelaLogin_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void BtnFechar_Click(object sender, EventArgs e)
@@ -59,5 +54,6 @@ namespace CriptoHub
             }
             
         }
+
     }
 }
